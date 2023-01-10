@@ -1,3 +1,4 @@
+print("abriu")
 local games = {
     [11040063484] = "swordslasher"
 }
@@ -8,4 +9,6 @@ if supported then
     print("carregando... " .. supported)
     print("https://raw.githubusercontent.com/mateuscezar/roblox-script/main/games/" .. supported .. ".lua")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/mateuscezar/roblox-script/main/games/" .. supported .. ".lua"))()
+else
+    print("não suporta")
 end
